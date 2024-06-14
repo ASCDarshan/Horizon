@@ -6,12 +6,16 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-import blanketImage from '../../../assets/blanket.png';
-import notebookImage from '../../../assets/notebook.png';
-import bicycleImage from '../../../assets/bicycle.png';
-import ganeshImage from '../../../assets/ganesh.png';
-import footwearImage from '../../../assets/footwear.png';
-import holikaImage from '../../../assets/blood.png';
+
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+
+
+
 
 const items = [
   {
@@ -44,89 +48,142 @@ const items = [
 
 export default function Highlights() {
   return (
-    <Box
-      id="highlights"
-      sx={{
-        pt: { xs: 4, sm: 8 },
-        pb: { xs: 8, sm: 8 },
-        color: 'white',
-        bgcolor: 'hsl(220, 30%, 2%)',
-      }}
-    >
-      <Container
+    <Box >
+      <Box
+        id="highlights"
         sx={{
-          position: 'relative',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: { xs: 3, sm: 6 },
+          pt: { xs: 4, sm: 8 },
+          pb: { xs: 8, sm: 8 },
+          color: 'white',
+          bgcolor: 'hsl(220, 30%, 2%)',
         }}
       >
-        <Box
+        <Container
           sx={{
-            width: { sm: '100%', md: '60%' },
-            textAlign: { sm: 'left', md: 'center' },
+            position: 'relative',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: { xs: 3, sm: 6 },
           }}
         >
-          <Typography component="h2" variant="h4">
-            Our Approach
-          </Typography>
-          <Typography variant="body1" sx={{ color: 'grey.400' }}>
-            We pride ourselves on our unique, tailored strategies for every institution. We go beyond just understanding your needs; we deliver comprehensive solutions!
-          </Typography>
-        </Box>
-        <Grid container spacing={2.5}>
-          {items.map((item, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
-              <Card
-                sx={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'space-between',
-                  height: '100%',
-                  border: '1px solid',
-                  borderColor: 'hsla(220, 25%, 25%, .3)',
-                  backgroundColor: 'background.paper',
-                  boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.25)',
-                  transition: 'transform 0.3s ease-in-out',
-                  '&:hover': {
-                    transform: 'scale(1.05)',
-                  },
-                }}
-              >
-                <Stack
-                  direction="column"
-                  spacing={2}
-                  alignItems="center"
-                  justifyContent="center"
-                  sx={{ flexGrow: 1 }}
-                >
-                  <Box
-                    component="img"
-                    sx={{
-                      height: 200,
-                      width: '100%',
-                      objectFit: 'cover',
-                      borderTopLeftRadius: '8px',
-                      borderTopRightRadius: '8px',
-                    }}
-                    src={item.image}
-                    alt={item.title}
-                  />
-                  <Box sx={{ textAlign: 'center', p: 2 }}>
-                    <Typography fontWeight="medium" gutterBottom>
-                      {item.title}
-                    </Typography>
-                    <Typography variant="body2" sx={{ color: 'grey.600' }}>
-                      {item.description}
-                    </Typography>
-                  </Box>
-                </Stack>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
-    </Box>
+          <Box
+            sx={{
+              width: { sm: '100%', md: '60%' },
+              textAlign: { sm: 'left', md: 'center' },
+            }}
+          >
+            <Typography component="h2" variant="h4">
+              Our Approach
+            </Typography>
+            <Typography variant="body1" sx={{ color: 'grey.400' }}>
+              We pride ourselves on our unique, tailored strategies for every institution. We go beyond just understanding your needs; we deliver comprehensive solutions!
+            </Typography>
+          </Box>
+
+          <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 4 }}>
+            <Box sx={{ width: '25%' }}>
+              <Timeline position="alternate">
+                <TimelineItem>
+                  <TimelineSeparator>
+                    <TimelineDot variant="outlined" />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent>Discover</TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineSeparator>
+                    <TimelineDot variant="outlined" color="primary" />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent>Analyze</TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineSeparator>
+                    <TimelineDot variant="outlined" />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent>Strategize</TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineSeparator>
+                    <TimelineDot variant="outlined" color="secondary" />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent>Execute</TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineSeparator>
+                    <TimelineDot variant="outlined" />
+                  </TimelineSeparator>
+                  <TimelineContent>Discover</TimelineContent>
+                </TimelineItem>
+              </Timeline>
+            </Box>
+
+            <Box sx={{ width: '75%' }}>
+              <Grid container spacing={2.5}>
+                {items.map((item, index) => (
+                  <Grid item xs={12} sm={6} md={4} key={index}>
+                    <Card
+                      sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                        height: '100%',
+                        border: '1px solid',
+                        borderColor: 'hsla(220, 25%, 25%, .3)',
+                        backgroundColor: 'background.paper',
+                        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.25)',
+                        transition: 'transform 0.3s ease-in-out',
+                        '&:hover': {
+                          transform: 'scale(1.05)',
+                        },
+                      }}
+                    >
+                      <Stack
+                        direction="column"
+                        spacing={2}
+                        alignItems="center"
+                        justifyContent="center"
+                        sx={{ flexGrow: 1 }}
+                      >
+                        <Box
+                          component="img"
+                          sx={{
+                            height: 200,
+                            width: '100%',
+                            objectFit: 'cover',
+                            borderTopLeftRadius: '8px',
+                            borderTopRightRadius: '8px',
+                          }}
+                          src={item.image}
+                          alt={item.title}
+                        />
+                        <Box sx={{ textAlign: 'center', p: 2 }}>
+                          <Typography fontWeight="medium" gutterBottom>
+                            {item.title}
+                          </Typography>
+                          <Typography variant="body2" sx={{ color: 'grey.600' }}>
+                            {item.description}
+                          </Typography>
+                        </Box>
+                      </Stack>
+                    </Card>
+                  </Grid>
+                ))}
+              </Grid>
+
+            </Box>
+
+          </Box>
+
+
+        </Container>
+      </Box >
+
+    </Box >
+
+
   );
 }

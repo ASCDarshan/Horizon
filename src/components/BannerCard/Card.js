@@ -33,7 +33,7 @@ const Cards = ({ title, subtitle, description }) => {
             <StyledCard>
                 <CardContent>
                     <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, alignItems: 'center', gap: 2 }}>
-                        <img src={logo} alt="Indraprasth Foundation Logo" style={{ height: 150, marginTop: 8 }} />
+                        <img src={logo} alt="Horizon Edu Consulting LLC" style={{ height: 150, marginTop: 8 }} />
                         <Stack
                             spacing={2}
                             alignItems="center"
