@@ -13,7 +13,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" mt={1}>
       {'Copyright © '}
-      <Link href="https://indraprasthfoundation.org/">Horizon Edu Consulting LLC&nbsp;</Link>
+      <Link href="/">Horizon Edu Consulting LLC&nbsp;</Link>
       {new Date().getFullYear()}
     </Typography>
   );
