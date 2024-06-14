@@ -81,8 +81,8 @@ export default function Highlights() {
             </Typography>
           </Box>
 
-          <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 4 }}>
-            <Box sx={{ width: '25%' }}>
+          <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 4, p: { xs: 2, md: 4 } }}>
+            <Box sx={{ width: { xs: '100%', md: '25%' }, mb: { xs: 2, md: 0 } }}>
               <Timeline position="alternate">
                 <TimelineItem>
                   <TimelineSeparator>
@@ -121,7 +121,7 @@ export default function Highlights() {
               </Timeline>
             </Box>
 
-            <Box sx={{ width: '75%' }}>
+            <Box sx={{ width: { xs: '100%', md: '75%' } }}>
               <Grid container spacing={2.5}>
                 {items.map((item, index) => (
                   <Grid item xs={12} sm={6} md={4} key={index}>
@@ -173,10 +173,9 @@ export default function Highlights() {
                   </Grid>
                 ))}
               </Grid>
-
             </Box>
-
           </Box>
+
 
 
         </Container>
