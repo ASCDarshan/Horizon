@@ -11,42 +11,39 @@ import { useTheme } from '@mui/system';
 
 const userTestimonials = [
   {
-    name: '- Rajesh Bhatt',
-    service: "Indraprasth Nu Rasodu(Free Nutritious Meals)",
+    name: '- Rajesh Kumar, CEO, Global Education Services',
     testimonial:
-      "Donating to Indraprasth Nu Rasodu has been one of the most fulfilling experiences of my life.Knowing that my contributions help provide nutritious meals to those in need brings me immense joy.This organization is truly making a difference in our community."
+      "Working with Horizon Edu Consulting has revolutionized our approach to international student recruitment. Their team’s expertise in market analysis and strategic planning has helped us identify and penetrate new markets effectively. They truly understand the complexities of cross-border education and have been an invaluable partner in our growth."
     ,
   },
   {
-    name: '- Sneha Gupta',
+    name: '- Laura Smith, Managing Director, EduLink International',
     testimonial:
-      "As a donor to Indraprasth Nu Rasodu, I am proud to support a cause that ensures no one goes hungry. The dedication of the team and the impact of their work is inspiring. I encourage everyone to contribute to this noble initiative."
+      "Horizon Edu Consulting has been instrumental in enhancing our brand presence and student recruitment efforts in Asia. Their on-the-ground support and strategic insights have significantly boosted our conversion rates. The professionalism and dedication of their team are unmatched, making them a key asset to our operations."
     ,
   },
   {
-    name: '- Vikram Sharma',
-    service: "Footwear Donation",
+    name: '- Ahmed Khan, Director of Operations, StudyAbroad Solutions',
     testimonial:
-      "Donating footwear through this program has been an eye-opener. It's incredible how something as simple as a pair of shoes can transform someone's life. Indraprasth Nu Rasodu ensures that our donations reach those who need them the most, making every contribution count."
+      "The team at Horizon Edu Consulting excels in providing comprehensive solutions tailored to our needs. From market research to operational management, they have consistently delivered outstanding results. Their ability to navigate local markets and regulatory environments has been crucial to our success in new regions."
     ,
   },
   {
-    name: '- Neha Joshi',
+    name: '- Priya Mehta, Head of Recruitment, EduGlobal Connect',
     testimonial:
-      "I am grateful for the opportunity to donate footwear to those in need. Seeing the smiles on the faces of children who receive new shoes is priceless. Indraprasth Nu Rasodu’s commitment to helping the underprivileged is truly commendable."
+      "Horizon Edu Consulting’s support in staff recruitment and training has been exceptional. Their expertise in finding the right candidates and setting up local offices has streamlined our operations. We now have a stronger local presence and a more effective recruitment strategy thanks to their efforts."
     ,
   },
   {
-    name: '- Arjun Mehta',
-    service: "Discounted Books for Underprivileged Kids",
+    name: '- John Lee, Marketing Director, WorldWide Education Network',
     testimonial:
-      "Contributing to the discounted books program has been incredibly rewarding. Education is a powerful tool, and knowing that my donations are helping children access quality books and learning materials is heartwarming. Indraprasth Nu Rasodu is paving the way for a brighter future."
+      "Partnering with Horizon Edu Consulting has significantly improved our digital and social media outreach. Their innovative campaigns and strategic use of digital platforms have enhanced our visibility and engagement with prospective students. Their holistic approach to market visibility is truly impressive."
     ,
   },
   {
-    name: '- Pooja Desai',
+    name: '- Maria Gonzalez, CEO, International Education Bridge',
     testimonial:
-      "I believe in the power of education, and donating to this cause has been a wonderful experience. Indraprasth Nu Rasodu’s initiative to provide discounted books to underprivileged kids is making a significant impact. It feels great to be a part of this journey."
+      "Horizon Edu Consulting’s commitment to integrity and excellence has been evident from day one. Their strategic partnerships and thorough understanding of local markets have enabled us to expand our footprint globally. The continuous support and expert guidance they provide have been instrumental in our ongoing success."
     ,
   },
 
